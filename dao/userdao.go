@@ -11,3 +11,8 @@ func CheckUser(username string, password string) (*model.User, err){
 	  user := &model.User{}
 	  row.Scan(&user.ID,&user.Username, &user.Password)
 } 
+
+
+func SaveUser(){
+	
+}
