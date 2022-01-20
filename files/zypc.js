@@ -111,16 +111,16 @@ zypc.search = {
 
 //登录状态
 function load_login_status() {
-    var url = 'index.php?ca=Common.AjaxUserInfo&v=2&t=' + (new Date().getTime());
-    $.get(url, function(res) {
-        if(res == '') {
-            $('#login_box').hide();
-            $('#unlogin_box').show()
-        } else {
-            $('#unlogin_box').hide();
-            $('#login_box').show().find('i:eq(0)').html(res);
-        }
-    });
+    // var url = 'index.php?ca=Common.AjaxUserInfo&v=2&t=' + (new Date().getTime());
+    // $.get(url, function(res) {
+    //     if(res == '') {
+    //         $('#login_box').hide();
+    //         $('#unlogin_box').show()
+    //     } else {
+    //         $('#unlogin_box').hide();
+    //         $('#login_box').show().find('i:eq(0)').html(res);
+    //     }
+    // });
     $('#login_box').bind({
         'mouseover': function () {
             $(this).find('ul').show();
