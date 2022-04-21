@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 	"text/template"
-	"controller"
+	"book-store/controller"
 )
 
 func Indexhandler(w http.ResponseWriter, r *http.Request)  {
