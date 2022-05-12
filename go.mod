@@ -1,10 +1,7 @@
-module example.com/m/v2
+module book-store
 
 go 1.16
 
-require (
-    book-store v0.0.1
-)
+require github.com/go-sql-driver/mysql v1.6.0
 
-
-replace "book-store" => "./"
+replace book-store => ./

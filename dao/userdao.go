@@ -1,8 +1,9 @@
 package dao
 
-import(
-	"book-store/model"
+import (
 	"book-store/utils"
+
+	"book-store/model"
 )
 
 func CheckUserNameAndPassword(username string, password string) (*model.User, error) {
